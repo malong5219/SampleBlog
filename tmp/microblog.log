@@ -1,0 +1,85 @@
+2015-10-12 10:23:32,112 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-12 10:24:18,538 ERROR: Exception on /edit [POST] [in /Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/malong/work/web/microblog/app/views.py", line 132, in edit
+    if form.validate_on_submit():
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/malong/work/web/microblog/app/forms.py", line 23, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2015-10-12 10:43:59,065 ERROR: Exception on /edit [POST] [in /Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/malong/work/web/microblog/app/views.py", line 132, in edit
+    if form.validate_on_submit():
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/malong/work/web/microblog/app/forms.py", line 23, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2015-10-12 10:49:42,438 ERROR: Exception on /edit [POST] [in /Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/malong/work/web/microblog/app/views.py", line 132, in edit
+    if form.validate_on_submit():
+  File "/Users/malong/work/web/microblog/venv/lib/python2.7/site-packages/flask_wtf/form.py", line 166, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "/Users/malong/work/web/microblog/app/forms.py", line 23, in validate
+    user = User.query.filter_by(nickname=self.nickname.data).first()
+NameError: global name 'User' is not defined
+2015-10-12 10:51:57,119 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-12 10:51:57,569 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-12 10:53:53,155 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-12 11:33:42,827 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-15 20:12:53,087 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-15 20:13:15,738 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-15 20:13:52,512 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-15 20:14:58,471 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-16 09:37:45,062 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-10-16 09:38:35,043 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 19:57:52,755 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 19:58:17,716 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 19:58:18,175 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 20:26:19,287 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 20:40:36,622 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 20:54:18,283 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 21:01:06,457 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 21:53:55,938 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 21:54:24,014 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 21:54:24,438 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
+2015-12-19 21:57:40,087 INFO: microblog startup [in /Users/malong/work/web/microblog/app/__init__.py:45]
